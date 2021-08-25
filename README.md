@@ -20,7 +20,7 @@ We decided to create this repo after we realized there were major issues with ex
 Instead, we settled on a custom build system that combines aspects of both Blender's build bootstrapper and Gaffer's dependencies library. Here is a basic explanation of how it works:
 
 - Each library's source code is downloaded (with git) and compiled
-- The compiled library is placed in a local folder relative to the root of Mo++'s sources
+- The compiled library is placed in a local folder called `packages/` that is a relative path to the root of Mo++'s sources
 - As Mo++ is compiled, it references the local compiled library to static-link to them correctly
 
 ## Usage
